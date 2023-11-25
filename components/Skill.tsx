@@ -20,7 +20,7 @@ const Skill = ({ directionLeft }: Props) => {
         transition={{
           duration: 0.8,
         }}
-        className=" rounded-full border border-gray-500 object-cover w-24 h-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
+        className=" rounded-full border border-gray-500 object-cover w-24 h-24 xl:w-32 xl:h-32 filter transition duration-300 ease-in-out"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmL8iLXjb8OanZKnhlCfqrOCqgebnnnxwtA&usqp=CAU"
       />
     </div>
