@@ -1,6 +1,7 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
+import HorizontalScrollCarousel from "./HorizontalScrollCarouselExperience";
 type Props = {};
 
 const Experience = (props: Props) => {
@@ -21,11 +22,7 @@ const Experience = (props: Props) => {
         Experience
       </h3>
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+        <HorizontalScrollCarousel />
       </div>
     </motion.div>
   );

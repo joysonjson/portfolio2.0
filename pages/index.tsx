@@ -1,44 +1,35 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import Head from "next/head";
-import Header from "@/components/Header";
-import Landing from "@/components/Landing";
 import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Header from "@/components/Header";
+import HorizontalScrollCarouselExperience from "@/components/HorizontalScrollCarouselExperience";
+import HorizontalScrollCarouselProjects from "@/components/HorizontalScrollCarouselProjects";
+import Landing from "@/components/Landing";
+import Projects from "@/components/Projects";
+import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const Example = () => {
   return (
-    <main className=" bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <main className=" bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory  z-0">
       <Head>
         <title>Joyson Portfolio</title>
       </Head>
       <Header />
-
-      {/* Landing */}
       <section id="landing" className=" snap-start">
         <Landing />
       </section>
-      {/* About */}
       <section id="about" className=" snap-center ">
         <About />
       </section>
       <section id="experience" className=" snap-center ">
-        <Experience />
-      </section>
-      <section id="skills" className=" snap-start ">
-        <Skills />
+        <HorizontalScrollCarouselExperience />
       </section>
       <section id="projects" className=" snap-start ">
-        <Projects />
+        <HorizontalScrollCarouselProjects />
       </section>
       <section id="contact" className=" snap-start ">
         <Contact />
       </section>
     </main>
   );
-}
+};
+export default Example;

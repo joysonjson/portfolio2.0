@@ -12,7 +12,7 @@ const Contact = (props: Props) => {
       </h3>
       <div className=" flex flex-col space-y-10">
         <h4 className=" text-4xl font-semibold text-center">
-          I have got just what you need{" "}
+          I have got just what you need <br />
           <span className="underline decoration-[#F7AB0A]/50">
             let&apos;s talk
           </span>
@@ -36,7 +36,6 @@ const Contact = (props: Props) => {
         <input placeholder="Subject" className="contactInput" type="text" />
         <textarea placeholder="Message" className="contactInput" />
         <button className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg">
-          {" "}
           Submit
         </button>
       </form>
