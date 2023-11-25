@@ -32,20 +32,6 @@ const Landing = (props: Props) => {
           <span className=" text-white mr-3"> {text}</span>
           <Cursor cursorColor="#F&AB0A" />
         </h1>
-        <div className="mt-4">
-          <Link href="#about">
-            <button className="primary-btn">About</button>
-          </Link>
-          <Link href="#experience">
-            <button className="primary-btn">Experience</button>
-          </Link>
-          <Link href="#skills">
-            <button className="primary-btn">Skills</button>
-          </Link>
-          <Link href="#projects">
-            <button className="primary-btn">Projects</button>
-          </Link>
-        </div>
       </div>
     </div>
   );
