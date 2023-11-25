@@ -7,12 +7,12 @@ type Props = {};
 const Contact = (props: Props) => {
   return (
     <div className=" h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10  mx-auto items-center justify-center">
-      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className=" absolute top-12 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
-      <div className=" flex flex-col space-y-10">
+      {/* <div className="  flex-col space-y-10 hidden md:flex space-x-2">
         <h4 className=" text-4xl font-semibold text-center">
-          I have got just what you need <br />
+          <br />
           <span className="underline decoration-[#F7AB0A]/50">
             let&apos;s talk
           </span>
@@ -27,11 +27,19 @@ const Contact = (props: Props) => {
             <p>+122222222222</p>
           </div>
         </div>
-      </div>
+      </div> */}
       <form className=" flex flex-col space-y-2 w-fit mx-auto mt-10">
-        <div className="space-x-2">
-          <input placeholder="Name" className="contactInput" type="text" />
-          <input placeholder="Email" className="contactInput" type="text" />
+        <div className=" space-y-2">
+          <input
+            placeholder="Name"
+            className="contactInput w-full"
+            type="text"
+          />
+          <input
+            placeholder="Email"
+            className="contactInput  w-full"
+            type="text"
+          />
         </div>
         <input placeholder="Subject" className="contactInput" type="text" />
         <textarea placeholder="Message" className="contactInput" />

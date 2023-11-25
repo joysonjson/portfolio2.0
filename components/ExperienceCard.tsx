@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-type Props = {};
+type Props = {
+  value: number;
+};
 
-const ExpereinceCard = (props: Props) => {
+const ExpereinceCard = ({ value }: Props) => {
   return (
     <article className=" flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-3/12 md:w-[600px] xl:[w-900px] snap-center bg-[#292929] p-10  cursor-pointer transition-opacity duration-200 overflow-hidden ">
       <motion.img
@@ -22,7 +24,7 @@ const ExpereinceCard = (props: Props) => {
         src="https://images.unsplash.com/photo-1572059002053-8cc5ad2f4a38?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
       <div>
-        <h4 className=" text-2xl font-light">SDE-1</h4>
+        <h4 className=" text-2xl font-light">SDE-{value}</h4>
         <p className="font-bold text-lg mt-1"> Helpshift Techonlogies</p>
         <div className=" flex space-x-2 my-2">
           <img
