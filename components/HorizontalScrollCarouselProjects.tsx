@@ -9,11 +9,11 @@ const HorizontalScrollCarouselProjects = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-90%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-190%"]);
   const projects = [1, 2, 3, 4, 5];
 
   return (
-    <section ref={targetRef} className="relative h-[500vh] bg-neutral-900">
+    <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div className="flex gap-4">
           <motion.div
@@ -29,7 +29,7 @@ const HorizontalScrollCarouselProjects = () => {
             style={{ x }}
             className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
           >
-            <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+            <h3 className=" absolute top-10 uppercase tracking-[20px] text-gray-500 text-2xl">
               Projects
             </h3>
             <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
@@ -52,16 +52,17 @@ const HorizontalScrollCarouselProjects = () => {
                         duration: 1.2,
                       }}
                       viewport={{ once: true }}
+                      className=" w-96"
                       src="https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvamVjdHN8ZW58MHx8MHx8fDA%3D"
                     />
-                    <div className=" space-y-10 px-0 md:px-10 max-w-6xl">
-                      <h4 className=" text-4xl font-semibold text-center">
+                    <div className=" space-y-10 px-4 md:px-10 ">
+                      <h4 className=" text-xl font-semibold text-center">
                         <span className=" underline decoration-[#F7AB0A]/50">
-                          Case Study {num + 1} of {projects.length} :
+                          Case Study {num} of {projects.length} :
                         </span>
                         UPS Clone
                       </h4>
-                      <p className=" text-lg text-cetner md:text-left">
+                      <p className=" text-md text-cetner md:text-left">
                         Introduction. Netflix is the biggest video streaming
                         platform in the world, offering movies, seasons,
                         biographies, reality shows, and more. Their video
