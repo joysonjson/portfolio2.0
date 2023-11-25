@@ -29,7 +29,7 @@ const About = (props: Props) => {
           <span className=" underline decoration-[#F7AB0A]/50"> little </span>
           background
         </h4>
-        <p className=" text-base">
+        <p className=" text-base text-justify">
           Experienced Software Engineer with a demonstrated history of working
           in the computer software industry. Skilled in iOS, React Native,
           Objective-C, Swift, React, Vue, and angular js.

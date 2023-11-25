@@ -4,6 +4,8 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Landing from "@/components/Landing";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Skills from "@/components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,12 @@ export default function Home() {
       {/* About */}
       <section id="about" className=" snap-center ">
         <About />
+      </section>
+      <section id="experience" className=" snap-center ">
+        <Experience />
+      </section>
+      <section id="skills" className=" snap-start ">
+        <Skills />
       </section>
     </main>
   );
