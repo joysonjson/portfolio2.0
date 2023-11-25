@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import TrippyScroll from "@/components/trippy";
 const Home = () => {
   const router = useRouter();
 
@@ -31,6 +32,7 @@ const Home = () => {
       <section id="experience" className=" snap-center ">
         <HorizontalScrollCarouselExperience />
       </section>
+      <TrippyScroll />
       <section id="projects" className=" snap-start ">
         <HorizontalScrollCarouselProjects />
       </section>
