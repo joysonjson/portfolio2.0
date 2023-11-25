@@ -5,11 +5,12 @@ import HorizontalScrollCarouselExperience from "@/components/HorizontalScrollCar
 import HorizontalScrollCarouselProjects from "@/components/HorizontalScrollCarouselProjects";
 import Landing from "@/components/Landing";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import Head from "next/head";
 
 const Example = () => {
   return (
-    <main className=" bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory  z-0">
+    <main className=" bg-[rgb(36,36,36)] text-white  snap-y snap-mandatory  z-0">
       <Head>
         <title>Joyson Portfolio</title>
       </Head>
@@ -19,6 +20,9 @@ const Example = () => {
       </section>
       <section id="about" className=" snap-center ">
         <About />
+      </section>
+      <section id="skills" className=" snap-center ">
+        <Skills />
       </section>
       <section id="experience" className=" snap-center ">
         <HorizontalScrollCarouselExperience />
