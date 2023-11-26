@@ -48,7 +48,7 @@ const Linker: React.FC<LinkerProps> = ({ heading, imgSrc, hint, href }) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-2 border-neutral-700  transition-colors duration-500 hover:border-neutral-50  hover:text-[#F7AB0A] hover:text-3xl py-2"
+      className="group relative text-white md:text-xl  flex items-center justify-between border-b-2 border-neutral-700  transition-colors duration-500 hover:border-neutral-50  hover:text-[#F7AB0A] hover:text-3xl py-2"
     >
       <div>
         <motion.span
@@ -107,7 +107,7 @@ const Linker: React.FC<LinkerProps> = ({ heading, imgSrc, hint, href }) => {
         transition={{ type: "spring" }}
         className="hidden sm:block z-10 p-4"
       >
-        <FaCircleArrowRight className=" " />
+        <FaCircleArrowRight />
         <p className="  font-bold"> {hint}</p>
       </motion.div>
     </motion.a>
