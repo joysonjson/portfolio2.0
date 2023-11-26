@@ -48,7 +48,7 @@ const Linker: React.FC<LinkerProps> = ({ heading, imgSrc, hint, href }) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8 hover:text-[#F7AB0A] hover:text-3xl "
+      className="group relative flex items-center justify-between border-b-2 border-neutral-700  transition-colors duration-500 hover:border-neutral-50  hover:text-[#F7AB0A] hover:text-3xl py-2"
     >
       <div>
         <motion.span

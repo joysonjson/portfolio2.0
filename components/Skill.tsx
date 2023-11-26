@@ -17,6 +17,10 @@ const Skill = ({ directionLeft }: Props) => {
           opacity: 1,
           x: 0,
         }}
+        animate={{
+          x: 0,
+          opacity: 1,
+        }}
         transition={{
           duration: 0.8,
         }}

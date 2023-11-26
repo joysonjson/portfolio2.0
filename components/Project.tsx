@@ -34,7 +34,7 @@ const Project = ({ num }: Props) => {
           </span>
           UPS Clone
         </h4>
-        <p className=" text-md text-cetner md:text-left text-gray-500">
+        <p className=" text-md text-cetner md:text-left text-gray-400">
           Introduction. Netflix is the biggest video streaming platform in the
           world, offering movies, seasons, biographies, reality shows, and more.
           Their video repository is growing significantly. So the engineering

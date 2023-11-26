@@ -32,7 +32,7 @@ const Home = () => {
       <section id="experience" className=" snap-center ">
         <HorizontalScrollCarouselExperience />
       </section>
-      <TrippyScroll />
+      {/* <TrippyScroll /> */}
       <section id="projects" className=" snap-start ">
         <HorizontalScrollCarouselProjects />
       </section>
