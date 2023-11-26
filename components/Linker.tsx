@@ -105,7 +105,7 @@ const Linker: React.FC<LinkerProps> = ({ heading, imgSrc, hint, href }) => {
           },
         }}
         transition={{ type: "spring" }}
-        className="relative z-10 p-4"
+        className="hidden sm:block z-10 p-4"
       >
         <FaCircleArrowRight className=" " />
         <p className="  font-bold"> {hint}</p>
