@@ -66,6 +66,6 @@ const TrippyScroll: React.FC = () => {
 };
 
 const NUM_SECTIONS = 25;
-const PADDING = `${100 / NUM_SECTIONS / 2}vmin`;
+const PADDING = `${30 / NUM_SECTIONS / 2}vmin`;
 
 export default TrippyScroll;

@@ -24,8 +24,12 @@ const ExpereinceCard = ({ value }: Props) => {
         src="https://images.unsplash.com/photo-1572059002053-8cc5ad2f4a38?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
       <div>
-        <h4 className=" text-2xl font-light">SDE-{value}</h4>
-        <p className="font-bold text-lg mt-1"> Helpshift Techonlogies</p>
+        <p className="font-bold text-lg mt-1 text-white">
+          {" "}
+          Helpshift Techonlogies
+        </p>
+        <h4 className=" text-lg font-light text-gray-500 ">SDE-{value}</h4>
+
         <div className=" flex space-x-2 my-2">
           <img
             className="h-10 w-10 rounded-full"
@@ -43,7 +47,7 @@ const ExpereinceCard = ({ value }: Props) => {
         <p className=" uppercase py-5 text-gray-300">
           Started work... - Ended...
         </p>
-        <ul className=" list-disc space-y-4 ml-5 text-md">
+        <ul className=" list-disc space-y-4 ml-5 text-md text-gray-100">
           <li>Summary ponts</li>
           <li>Summary ponts</li>
           <li>Summary ponts</li>

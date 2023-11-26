@@ -24,12 +24,12 @@ const About = (props: Props) => {
         className=" -mb-20 md:mb-0 flex-shrink-0 rounded-full w-56 h-56 object-cover md:rounded-lg md:rh-95 md:2-64 xl:w-[500px] xl:h-[600px]"
       />
       <div className=" space-y-10 px-0 md:10 ml-12">
-        <h4 className=" text-2xl font-semibold">
+        <h4 className=" text-2xl font-semibold text-gray-500">
           Here is a{" "}
           <span className=" underline decoration-[#F7AB0A]/50"> little </span>
           background
         </h4>
-        <p className=" text-base text-justify">
+        <p className=" text-base text-justify text-white">
           Experienced Software Engineer with a demonstrated history of working
           in the computer software industry. Skilled in iOS, React Native,
           Objective-C, Swift, React, Vue, and angular js.
