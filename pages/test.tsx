@@ -15,11 +15,13 @@ const Home = () => {
 
   return (
     <main className=" bg-[rgb(36,36,36)] text-whit w-fulle  snap-y snap-mandatory  z-0">
+      {/* asfsfsdfasdfadsfsf asfsfsdfasdfadsfsff sadf asd FaPersonCircleQuestion sdf
+      sdf sdf sdf dsf ds fds f f as f ds f ds f d s f d f d fd f d f d f sdf sf
+      sdf ds fsd fs dfsd f df s fs f sf sf sd f fds fsd f fds */}
       <Head>
         <title>Joyson Portfolio</title>
       </Head>
       <Header />
-
       <section id="landing" className=" snap-start overflow-x-hidden">
         <Landing />
       </section>
@@ -39,7 +41,7 @@ const Home = () => {
       <section id="contact" className=" snap-start overflow-x-hidden">
         <Contact />
       </section>
-      <NavBar />
+      {/* <NavBar /> */}
     </main>
   );
 };

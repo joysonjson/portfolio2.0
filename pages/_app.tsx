@@ -10,8 +10,8 @@ export default function App({ Component, pageProps, router }: AppProps) {
     when: "afterChildren",
   };
   return (
-    <AnimatePresence>
-      <div className="page-transition-wrapper  min-h-screen">
+    <>
+      {/* <div className="page-transition-wrapper overflow-x-hidden min-h-screen">
         <motion.div
           transition={spring}
           key={router.pathname}
@@ -19,10 +19,10 @@ export default function App({ Component, pageProps, router }: AppProps) {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -300, opacity: 0 }}
           id="page-transition-container"
-        >
-          <Component {...pageProps} key={router.pathname} />
-        </motion.div>
-      </div>
-    </AnimatePresence>
+        > */}
+      <Component {...pageProps} key={router.pathname} />
+      {/* </motion.div>
+      </div> */}
+    </>
   );
 }
