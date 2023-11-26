@@ -10,7 +10,7 @@ type Props = {};
 const NavBar = (props: Props) => {
   const router = useRouter();
   return (
-    <div className=" h-10 mx-auto sticky flex items-center justify-evenly bottom-5 my-4 bg-gray-400/20 rounded-xl max-w-[650px]">
+    <div className="pl-16 h-10 mx-auto sticky flex items-center justify-evenly bottom-5 my-4 bg-gray-400/20 rounded-xl max-w-[650px]">
       <Linker
         heading={<FaHome className="nav-icon" />}
         hint="Home"
