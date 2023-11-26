@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ExpereinceCard from "./ExperienceCard";
+import Project from "./Project";
 
 const HorizontalScrollCarouselExperience = () => {
   const targetRef = useRef(null);
@@ -11,13 +12,34 @@ const HorizontalScrollCarouselExperience = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
+    <section ref={targetRef} className="relative h-[200vh] bg-neutral-900">
+      <h3 className="pt-4 sticky top-16 uppercase tracking-[20px] text-gray-500 text-2xl text-center">
+        Experience
+      </h3>
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
-          {[1, 2, 3, 4, 5].map((card) => {
-            return <ExpereinceCard value={card} key={card} />;
-          })}
-        </motion.div>
+        <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+          <motion.div className="flex gap-4">
+            <motion.div
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+              }}
+              transition={{
+                duration: 1.2,
+              }}
+              style={{ x }}
+              className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+            >
+              <div className="relative w-full flex gap-4  overflow-y-hidden overflow-x-hidden snap-x snap-mandatory z-20">
+                {[0, 1, 2, 3, 4, 5].map((num) => {
+                  return <ExpereinceCard value={num} key={num} />;
+                })}
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

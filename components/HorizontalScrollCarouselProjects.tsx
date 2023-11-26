@@ -15,6 +15,9 @@ const HorizontalScrollCarouselProjects = () => {
 
   return (
     <section ref={targetRef} className="relative h-[200vh] bg-neutral-900">
+      <h3 className=" sticky top-16 uppercase tracking-[20px] text-gray-500 text-2xl text-center">
+        Projects
+      </h3>
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div className="flex gap-4">
           <motion.div
@@ -30,10 +33,7 @@ const HorizontalScrollCarouselProjects = () => {
             style={{ x }}
             className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
           >
-            <h3 className=" absolute top-10 uppercase tracking-[20px] text-gray-500 text-2xl">
-              Projects
-            </h3>
-            <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+            <div className="relative w-full flex  overflow-y-hidden snap-x snap-mandatory z-20">
               {projects.map((num) => {
                 return <Project num={num} key={num} />;
               })}

@@ -5,11 +5,11 @@ type Props = {};
 
 const Contact = (props: Props) => {
   return (
-    <div className=" h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10  mx-auto items-center justify-center">
-      <h3 className=" absolute top-12 uppercase tracking-[20px] text-gray-500 text-2xl">
+    <div className=" h-screen  flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10  mx-auto items-center justify-center">
+      <h3 className=" absolute top-36 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
-      <form className=" flex flex-col space-y-2 w-fit mx-auto mt-10">
+      <form className=" flex flex-col space-y-2 w-fit mx-auto mt-20">
         <div className=" space-y-2">
           <input
             placeholder="Name"
