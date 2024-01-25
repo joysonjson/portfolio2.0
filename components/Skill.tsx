@@ -29,7 +29,7 @@ const Skill = ({ directionLeft, src, skill }: Props) => {
         className=" rounded-full  object-cover w-24 h-24 xl:w-32 xl:h-32 filter transition duration-300 ease-in-out"
         src={src}
       />
-      <p className="text-white py-2"> {skill}</p>
+      <p className="text-white py-2 text-center"> {skill}</p>
     </div>
   );
 };
