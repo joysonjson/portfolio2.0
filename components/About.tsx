@@ -20,19 +20,48 @@ const About = (props: Props) => {
         transition={{
           duration: 1.2,
         }}
-        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        className=" -mb-20 md:mb-0 flex-shrink-0 rounded-full w-56 h-56 object-cover md:rounded-lg md:rh-95 md:2-64 xl:w-[500px] xl:h-[600px]"
+        src="/images/vectors/about.png"
+        className=" -mb-20 md:mb-0 flex-shrink-0 rounded-md  h-56 mt-10 md:mt-0 mx-auto object-cover  xl:h-[600px]"
       />
-      <div className=" space-y-10 px-0 md:10 ml-12">
-        <h4 className=" text-2xl font-semibold text-gray-500">
+      <div className=" space-y-10 px-0 md:ml-10 ">
+        <h4 className=" text-2xl hidden md:block font-semibold text-gray-500">
           Here is a{" "}
           <span className=" underline decoration-[#F7AB0A]/50"> little </span>
           background
         </h4>
-        <p className=" text-base text-justify text-white">
-          Experienced Software Engineer with a demonstrated history of working
-          in the computer software industry. Skilled in iOS, React Native,
-          Objective-C, Swift, React, Vue, and angular js.
+        <p className=" text-base text-justify text-center text-white">
+          Motivated and results-driven Software Developer with 5 years of
+          experience in designing, developing, testing, and deploying mobile
+          applications. Proven expertise in utilizing technologies such as
+          Xcode, Swift, React Native, and more to deliver high-quality software
+          solutions. Adept at collaborating with cross-functional teams and
+          taking ownership of end-to-end project responsibilities.
+          {/* <br />
+          <br />
+          Beyond technical proficiency, my journey in the dynamic field of
+          mobile app development has instilled in me a set of invaluable soft
+          skills. Adaptability is a cornerstone of my approach, evidenced by my
+          smooth transition from a junior role to taking on the responsibilities
+          of a solo developer, showcasing my ability to navigate diverse
+          challenges. I am a strong advocate for clear and concise
+          communication, fostering an environment where ideas flow seamlessly
+          and teamwork thrives. Throughout my career, I have demonstrated a keen
+          sense of adaptability, collaborating effectively with cross-functional
+          teams. Additionally, I take pride in my mentoring abilities, always
+          ready to assist team members, contributing to a culture of continuous
+          learning and growth. */}
+          <br />
+          <br />
+          <span className="hidden md:block">
+            {" "}
+            Outside the world of coding, I am a drummer and guitar maestro 🎸, a
+            chess enthusiast ♟️, and a board game aficionado 🎲. As a tech
+            explorer 💻, I embrace the latest advancements in the ever-evolving
+            tech landscape. Naruto fan 🍥 and indulge my curiosity through
+            podcasts and TED Talks 🎧. Furthermore, I am an avid cycling
+            enthusiast 🚴‍♂️, finding both relaxation and inspiration on the open
+            road.
+          </span>
         </p>
       </div>
     </div>

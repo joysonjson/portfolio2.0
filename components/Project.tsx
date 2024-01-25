@@ -1,47 +1,35 @@
 import React from "react";
 import { motion } from "framer-motion";
 type Props = {
-  num: number;
+  name: string;
+  description: string;
+  src: string;
+  url?: string;
 };
 
-const Project = ({ num }: Props) => {
-  const projects = [1, 2, 3, 4, 5];
+const Project = ({ name, description, src, url }: Props) => {
   return (
     <div
-      className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
-      key={num}
+      className=" flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:[w-900px] snap-center bg-[#292929] p-0 pb-2  cursor-pointer transition-opacity duration-200 overflow-hidden max-h-[90vh] hover:cursor-pointer"
+      key={name}
     >
-      <motion.img
-        initial={{
-          opacity: 0,
-          y: -300,
+      <button
+        onClick={() => {
+          if (url) {
+            window.open(url, "_blank");
+          }
         }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 1.2,
-        }}
-        viewport={{ once: true }}
-        className=" w-96"
-        src="https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvamVjdHN8ZW58MHx8MHx8fDA%3D"
-      />
-      <div className=" space-y-10 px-4 md:px-10 ">
-        <h4 className=" text-xl font-semibold text-center  text-white">
-          <span className=" underline  decoration-[#F7AB0A]/50 ">
-            Case Study {num} of {projects.length} :
-          </span>
-          UPS Clone
-        </h4>
-        <p className=" text-md text-cetner md:text-left text-gray-400">
-          Introduction. Netflix is the biggest video streaming platform in the
-          world, offering movies, seasons, biographies, reality shows, and more.
-          Their video repository is growing significantly. So the engineering
-          team at Netflix keeps trying to find better ways to display content to
-          their consumers.
-        </p>
-      </div>
+      >
+        <motion.img className=" w-full max-h-[300px]" src={src} />
+        <div className=" space-y-10 px-4 md:px-10 ">
+          <h4 className=" text-xl font-semibold text-center py-2 text-white">
+            {name}
+          </h4>
+          <p className=" text-md text-cetner md:text-left text-gray-400">
+            {description}
+          </p>
+        </div>
+      </button>
     </div>
   );
 };
