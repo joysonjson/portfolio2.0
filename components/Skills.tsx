@@ -38,7 +38,7 @@ const Skills = (props: Props) => {
         />
         <Skill skill="VSCode" src="/images/vectors/vscode.svg" />
         <Skill
-          skill="React native/React.js"
+          skill="React-native/React.js"
           src="/images/vectors/react.svg"
           directionLeft={true}
         />
