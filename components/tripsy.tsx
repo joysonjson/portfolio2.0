@@ -1,5 +1,6 @@
 import { useTransform, useScroll, motion } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { toast } from "react-toastify";
 
 interface SectionProps {
   background: string;

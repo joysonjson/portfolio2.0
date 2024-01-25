@@ -1,9 +1,9 @@
 import TrippyScroll from "@/components/tripsy";
-import React from "react";
+import React, { useEffect } from "react";
 
 type Props = {};
 
-const tipsy = (props: Props) => {
+const Tripsy = (props: Props) => {
   return (
     <div>
       <TrippyScroll />
@@ -11,4 +11,4 @@ const tipsy = (props: Props) => {
   );
 };
 
-export default tipsy;
+export default Tripsy;

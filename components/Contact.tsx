@@ -4,6 +4,7 @@ import React, { FormEvent, useEffect, useState } from "react";
 import { db } from "@/utils/firebase";
 import { v4 as uuidv4 } from "uuid";
 import { toast, ToastContainer } from "react-toastify";
+import { Router, useRouter } from "next/router";
 type Props = {};
 
 const Contact = (props: Props) => {
@@ -11,7 +12,7 @@ const Contact = (props: Props) => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-
+  const router = useRouter();
   const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value);
   };
@@ -103,6 +104,12 @@ const Contact = (props: Props) => {
           Submit
         </button>
       </form>
+      <button
+        onClick={() => router.push("/tripsy")}
+        className="text-white py-1 px-2 rounded-md text-lg mt-5 absolute bottom-3 border border-[#F7AB0A]"
+      >
+        click to get hipnotized..!
+      </button>
     </div>
   );
 };
