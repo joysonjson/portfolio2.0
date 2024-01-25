@@ -4,11 +4,12 @@ import { motion } from "framer-motion";
 type Props = {
   directionLeft?: boolean;
   src: string;
+  skill: string;
 };
 
-const Skill = ({ directionLeft, src }: Props) => {
+const Skill = ({ directionLeft, src, skill }: Props) => {
   return (
-    <div className=" group relative flex cursor-pointer">
+    <div className=" group relative flex cursor-pointer flex-col justify-center items-center">
       <motion.img
         initial={{
           opacity: 0,
@@ -28,6 +29,7 @@ const Skill = ({ directionLeft, src }: Props) => {
         className=" rounded-full  object-cover w-24 h-24 xl:w-32 xl:h-32 filter transition duration-300 ease-in-out"
         src={src}
       />
+      <p className="text-white py-2"> {skill}</p>
     </div>
   );
 };

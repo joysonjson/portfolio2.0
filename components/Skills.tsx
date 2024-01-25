@@ -21,14 +21,31 @@ const Skills = (props: Props) => {
         Skills
       </h3>
       <div className="grid grid-cols-3 gap-5">
-        <Skill src="/images/vectors/swift.svg" directionLeft={true} />
-        <Skill src="/images/vectors/xcode.svg" directionLeft={true} />
-        <Skill src="/images/vectors/github.svg" directionLeft={true} />
-        <Skill src="/images/vectors/vscode.svg" />
-        <Skill src="/images/vectors/react.svg" directionLeft={true} />
-        <Skill src="/images/vectors/jira.svg" />
-        <Skill src="/images/vectors/firebase.svg" />
-        <Skill src="/images/vectors/confluence.svg" />
+        <Skill
+          skill="Swift"
+          src="/images/vectors/swift.svg"
+          directionLeft={true}
+        />
+        <Skill
+          skill="Xcode"
+          src="/images/vectors/xcode.svg"
+          directionLeft={true}
+        />
+        <Skill
+          skill="Git"
+          src="/images/vectors/github.svg"
+          directionLeft={true}
+        />
+        <Skill skill="VSCode" src="/images/vectors/vscode.svg" />
+        <Skill
+          skill="React native/React.js"
+          src="/images/vectors/react.svg"
+          directionLeft={true}
+        />
+        <Skill skill="jira" src="/images/vectors/jira.svg" />
+        <Skill skill="firebase" src="/images/vectors/firebase.svg" />
+        <Skill skill="documentation" src="/images/vectors/confluence.svg" />
+        <Skill skill="java script" src="/images/vectors/java-script.svg" />
       </div>
     </motion.div>
   );
