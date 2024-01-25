@@ -9,7 +9,7 @@ import Skills from "@/components/Skills";
 import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
-import TrippyScroll from "@/components/trippy";
+// import TrippyScroll from "@/components/trippy";
 const Home = () => {
   const router = useRouter();
 

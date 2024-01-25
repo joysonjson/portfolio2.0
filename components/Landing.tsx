@@ -8,10 +8,14 @@ type Props = {};
 const Landing = (props: Props) => {
   const [text, helper] = useTypewriter({
     words: [
-      "Hi, I am 😂..!",
+      "Hi, I am JOY..!",
       "<Coder />",
       "The Apple-Fan-boy ",
-      "Idea gardener 🌱",
+      // "Idea gardener 🌱",
+      "Musician 🎸",
+      "Chess enthusiast ♟️",
+      "Tech explorer 💻",
+      "Cycling  🚴‍♂️",
     ],
     loop: true,
     delaySpeed: 2000,
@@ -21,7 +25,7 @@ const Landing = (props: Props) => {
       <BackgroundCircles />
       <img
         className=" relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/images/vectors/joy.png"
         alt="headhost"
       />
       <div className="z-20">
