@@ -104,12 +104,12 @@ const Contact = (props: Props) => {
           Submit
         </button>
       </form>
-      <button
+      {/* <button
         onClick={() => router.push("/tripsy")}
         className="text-white py-1 px-2 rounded-md text-lg mt-5 absolute bottom-3 border border-[#F7AB0A]"
       >
         click to get hipnotized..!
-      </button>
+      </button> */}
     </div>
   );
 };
