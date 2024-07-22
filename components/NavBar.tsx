@@ -1,7 +1,7 @@
 import React, { ReactNode, useRef } from "react";
 import { MdWork } from "react-icons/md";
 import { FaCode, FaHammer, FaHome } from "react-icons/fa";
-import { FaPersonCircleQuestion } from "react-icons/fa6";
+import { FaInstagram, FaPersonCircleQuestion } from "react-icons/fa6";
 import { useRouter } from "next/router";
 import Linker from "./Linker";
 

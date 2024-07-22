@@ -12,7 +12,7 @@ const Landing = (props: Props) => {
       "<Coder />",
       "The Apple-Fan-boy ",
       // "Idea gardener 🌱",
-      "Musician 🎸",
+      "Musician 🎸🥁",
       "Chess enthusiast ♟️",
       "Tech explorer 💻",
       "Cycling  🚴‍♂️",
