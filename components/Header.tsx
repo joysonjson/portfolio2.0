@@ -43,6 +43,12 @@ const Header = (props: Props) => {
           bgColor="transparent"
           url="https://stackoverflow.com/users/11054805/joy-son"
         />
+        <SocialIcon
+          target="_blank"
+          fgColor="gray"
+          bgColor="transparent"
+          url="https://www.instagram.com/joysonjson/"
+        />
       </motion.div>
       <motion.div
         initial={{
