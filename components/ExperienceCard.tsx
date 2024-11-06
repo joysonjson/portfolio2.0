@@ -18,7 +18,7 @@ const ExpereinceCard = ({
   url,
 }: Props) => {
   return (
-    <article className=" hover:cursor-pointer flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:[w-900px] snap-center bg-[#292929] p-10  cursor-pointer transition-opacity duration-200 overflow-hidden max-h-[90vh]">
+    <article className=" hover:cursor-pointer flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  snap-center bg-[#292929] p-2 ml-2 md:p-10  cursor-pointer transition-opacity duration-200 overflow-hidden shadow-2xl ">
       <button className=" text-left" onClick={() => window.open(url, "_blank")}>
         <motion.img
           initial={{
@@ -59,13 +59,13 @@ const ExpereinceCard = ({
             src="https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-5d0f0aa79779a6.6143656815612668556205.jpg"
           />
         </div> */}
-          <p className=" uppercase py-5 text-gray-300">{duration}</p>
+          {/* <p className=" uppercase py-5 text-gray-300">{duration}</p> */}
           {/* <ul className=" list-disc space-y-4 ml-5 text-md text-gray-100">
           {roles.map((role, index) => (
             <li key={role}>{role}</li>
           ))}
         </ul> */}
-          <ul className="list-disc space-y-4 ml-5 text-md text-gray-100">
+          <ul className="list-disc mt-5 space-y-4 ml-5 text-md text-gray-100">
             {/* Display all roles on larger screens */}
             <div className="hidden md:block">
               {roles.map((role, index) => (

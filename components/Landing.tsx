@@ -11,7 +11,7 @@ const Landing = (props: Props) => {
       "Hi, I am JOY..!",
       "<Coder />",
       "The Apple-Fan-boy ",
-      // "Idea gardener 🌱",
+      "Idea gardener 🌱",
       "Musician 🎸🥁",
       "Chess enthusiast ♟️",
       "Tech explorer 💻",
@@ -24,14 +24,14 @@ const Landing = (props: Props) => {
     <div className=" h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <img
-        className=" relative rounded-full h-32 w-32 mx-auto object-cover"
+        className=" relative rounded-full h-40 w-40 mx-auto object-cover"
         src="/images/vectors/joy.png"
         alt="headhost"
       />
       <div className="z-20">
-        <h2 className=" text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        {/* <h2 className=" text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Enginner
-        </h2>
+        </h2> */}
         <h1 className=" text-4xl lg:text-5xl font-semibold scroll-px-10">
           <span className=" text-white mr-3"> {text}</span>
           <Cursor cursorColor="#F&AB0A" />
