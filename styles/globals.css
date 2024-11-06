@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
 @layer components {
   .primary-btn {
     @apply px-6 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
@@ -17,7 +15,7 @@
 }
 body {
   background-color: #242424;
-  font-family: "Amaranth", sans-serif !important;
+  font-family: "Albert Sans", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }

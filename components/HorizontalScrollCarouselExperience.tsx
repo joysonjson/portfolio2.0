@@ -2,51 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ExpereinceCard from "./ExperienceCard";
 import Project from "./Project";
-
-const expereinceData = [
-  {
-    logo: "/images/vectors/helpshift.svg",
-    name: "Helpshift, Inc.",
-    title: "Software Enginner",
-    url: "https://www.helpshift.com/",
-    roles: [
-      "Develop and maintain SDKX for iOS platform, enhancing customer support experiences.",
-      "Write comprehensive documentation and review code for optimal performance.",
-      "Collaborate with cross-functional teams to implement new features and improvements.",
-      "Mentor team members and contribute to a culture of continuous learning.",
-      "Create and maintain plugins for React Native, Unreal Engine, Unity, Cocos.",
-    ],
-    duration: "Jul 2022 - Present",
-  },
-  {
-    logo: "/images/vectors/mobishaala.svg",
-    name: "Mobishaala Edu Tech Pvt Ltd",
-    title: "Software Enginner",
-    url: "https://mobishaala.com/",
-    roles: [
-      "Sole iOS developer in a small team, responsible for designing, implementing, testing, and deploying education-based mobile applications.",
-      "Handle end-to-end responsibilities, from concept to deployment.",
-      "Collaborate closely with teammates to design user-friendly interfaces and seamless user experiences.",
-      "Take ownership of both website and app development for online tutoring, ensuring quality and performance.",
-    ],
-    duration: "Aug 2020 - Jul 2022",
-  },
-  {
-    logo: "/images/vectors/cumulations.webp",
-    name: "Cumulations Technologies",
-    title: "Software Enginner",
-    url: "https://www.cumulations.com/",
-
-    roles: [
-      "Collaborate with product managers and cross-functional teams to define software requirements.",
-      "Design, develop, and maintain high-quality software applications.",
-      "Write clean and efficient code, conduct code reviews, and ensure code quality standards.",
-      "Debug and resolve software defects and issues promptly.",
-      "Work closlely with QA and design team to meet the requirements",
-    ],
-    duration: "Feb 2019 - July 2020",
-  },
-];
+import { expereinceData } from "@/utils/data";
 
 const HorizontalScrollCarouselExperience = () => {
   const targetRef = useRef(null);

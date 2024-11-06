@@ -7,9 +7,11 @@ import Landing from "@/components/Landing";
 import NavBar from "@/components/NavBar";
 import Skills from "@/components/Skills";
 import Head from "next/head";
-import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
-// import TrippyScroll from "@/components/trippy";
+import Experience from "@/components/Experience";
+import TrippyScroll from "@/components/tripsy";
+import Memories from "@/components/Memeories";
+
 const Home = () => {
   const router = useRouter();
 
@@ -29,13 +31,17 @@ const Home = () => {
       <section id="skills" className=" snap-center overflow-x-hidden">
         <Skills />
       </section>
-      <section id="experience" className=" snap-center ">
-        <HorizontalScrollCarouselExperience />
+      <section id="experience" className="snap-center ">
+        <Experience />
+        {/* <HorizontalScrollCarouselExperience /> */}
       </section>
-      {/* <TrippyScroll /> */}
       <section id="projects" className=" snap-start ">
         <HorizontalScrollCarouselProjects />
       </section>
+      {/* <section id="contact" className=" snap-start overflow-x-hidden h-screen">
+        <Memories />
+      </section> */}
+      {/* <TrippyScroll /> */}
       <section id="contact" className=" snap-start overflow-x-hidden">
         <Contact />
       </section>

@@ -10,7 +10,7 @@ type Props = {
 const Project = ({ name, description, src, url }: Props) => {
   return (
     <div
-      className=" flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:[w-900px] snap-center bg-[#292929] p-0 pb-2  cursor-pointer transition-opacity duration-200 overflow-hidden max-h-[90vh] hover:cursor-pointer"
+      className=" flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:[w-900px] snap-center bg-[#292929] p-0 pb-2  cursor-pointer transition-opacity duration-200 overflow-hidden max-h-[80vh] hover:cursor-pointer"
       key={name}
     >
       <button
