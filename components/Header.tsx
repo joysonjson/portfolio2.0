@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 type Props = {};
 
 const Header = (props: Props) => {
-  const mailToLink = "mailto:joysonpathra@gmail.com";
-
   const whatsappLink =
     "https://api.whatsapp.com/send?phone=+918792093075&text=Hi,%20I%20would%20like%20to%20know%20more%20about%20products";
   return (

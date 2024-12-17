@@ -1,16 +1,10 @@
 import About from "@/components/About";
-import Contact from "@/components/Contact";
 import Header from "@/components/Header";
-import HorizontalScrollCarouselExperience from "@/components/HorizontalScrollCarouselExperience";
-import HorizontalScrollCarouselProjects from "@/components/HorizontalScrollCarouselProjects";
 import Landing from "@/components/Landing";
 import NavBar from "@/components/NavBar";
 import Skills from "@/components/Skills";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Experience from "@/components/Experience";
-import TrippyScroll from "@/components/tripsy";
-import Memories from "@/components/Memeories";
 import Shop from "@/components/Shop";
 
 const Home = () => {
@@ -19,7 +13,7 @@ const Home = () => {
   return (
     <main className=" bg-white text-whit w-fulle  snap-y snap-mandatory  z-0">
       <Head>
-        <title>Joyson Portfolio</title>
+        <title>Trail Treat</title>
       </Head>
       <Header />
 
