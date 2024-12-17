@@ -7,6 +7,8 @@ type Props = {};
 const Header = (props: Props) => {
   const mailToLink = "mailto:joysonpathra@gmail.com";
 
+  const whatsappLink =
+    "https://api.whatsapp.com/send?phone=+918792093075&text=Hi,%20I%20would%20like%20to%20know%20more%20about%20products";
   return (
     <header className=" sticky top-0 flex items-start justify-between max-w-[80%] px-5 md:px-8 mx-auto z-20">
       <motion.div
@@ -25,30 +27,7 @@ const Header = (props: Props) => {
         }}
         className=" flex items-center justify-center"
       >
-        <SocialIcon
-          target="_blank"
-          fgColor="gray"
-          bgColor="transparent"
-          url="https://www.linkedin.com/in/joysonps/"
-        />
-        <SocialIcon
-          target="_blank"
-          fgColor="gray"
-          bgColor="transparent"
-          url="https://github.com/joysonjson"
-        />
-        <SocialIcon
-          target="_blank"
-          fgColor="gray"
-          bgColor="transparent"
-          url="https://stackoverflow.com/users/11054805/joy-son"
-        />
-        <SocialIcon
-          target="_blank"
-          fgColor="gray"
-          bgColor="transparent"
-          url="https://www.instagram.com/joysonjson/"
-        />
+        {/* todo logo */}
       </motion.div>
       <motion.div
         initial={{
@@ -67,13 +46,19 @@ const Header = (props: Props) => {
         className=" flex items-center text-gray-400"
       >
         <SocialIcon
-          fgColor="gray"
-          network="email"
+          target="_blank"
+          fgColor="#E47530"
           bgColor="transparent"
-          url={mailToLink}
+          url="https://www.instagram.com/tail_treat/"
+        />
+        <SocialIcon
+          fgColor="#E47530"
+          network="whatsapp"
+          bgColor="transparent"
+          url={whatsappLink}
           target="_blank"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+        <p className="uppercase hidden md:inline-flex text-sm text-[#E47530]">
           Get In Tough
         </p>
       </motion.div>
