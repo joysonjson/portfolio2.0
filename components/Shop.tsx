@@ -14,31 +14,41 @@ const Shop = (props: Props) => {
       transition={{
         duration: 1.2,
       }}
-      className=" h-screen  flex  relative flex-col text-left gap-10 max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
+      className=" h-screen  flex  relative flex-col text-left gap-10 max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center my-6"
     >
       <h3 className=" my-10 uppercase tracking-[20px] font-bold  text-2xl">
         Shop NOW
       </h3>
-      <div>
-        <motion.img
-          initial={{
-            y: -100,
-            opacity: 0,
-          }}
-          animate={{
-            y: 0,
-            opacity: 1,
-          }}
-          transition={{
-            delay: 1.3,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{ once: true }}
-          className="  object-cover object-center text-center mx-auto py-2"
+      <div className=" flex gap-8 overflow-x-auto no-scrollbar">
+        {/* <img
+          className=" text-center mx-auto py-2"
           src="/images/vectors/trail-treat.png"
+        /> */}
+        {/* <img
+          className=" text-center mx-auto py-2"
+          src="/images/vectors/s1.jpeg"
+        /> */}
+        <img
+          className=" text-center mx-auto py-2"
+          src="/images/vectors/t1.png"
+        />
+
+        <img
+          className=" text-center mx-auto py-2"
+          src="/images/vectors/s4.jpg"
+        />
+        <img
+          className=" text-center mx-auto py-2"
+          src="/images/vectors/t2.png"
+        />
+        {/* <img
+          className=" text-center mx-auto py-2"
+          src="/images/vectors/s3.jpeg"
+        /> */}
+
+        <img
+          className=" text-center mx-auto py-2"
+          src="/images/vectors/s5.jpg"
         />
       </div>
       <div className="flex gap-8 items-center justify-center">
