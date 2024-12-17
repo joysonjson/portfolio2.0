@@ -15,37 +15,21 @@ const Skills = (props: Props) => {
       transition={{
         duration: 1.2,
       }}
-      className=" h-screen  flex  relative flex-col text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
+      className=" my-16 flex flex-col relative text-left max-w-[2000px] xl:px-10  justify-center xl:space-y-0 mx-auto items-center gap-28"
     >
-      <h3 className=" absolute top-16 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Skills
-      </h3>
-      <div className="grid grid-cols-3 gap-5">
-        <Skill
-          skill="Swift"
-          src="/images/vectors/swift.svg"
-          directionLeft={true}
-        />
-        <Skill
-          skill="Xcode"
-          src="/images/vectors/xcode.svg"
-          directionLeft={true}
-        />
-        <Skill
-          skill="Git"
-          src="/images/vectors/github.svg"
-          directionLeft={true}
-        />
-        <Skill skill="VSCode" src="/images/vectors/vscode.svg" />
-        <Skill
-          skill="React-native/React.js"
-          src="/images/vectors/react.svg"
-          directionLeft={true}
-        />
-        <Skill skill="jira" src="/images/vectors/jira.svg" />
-        <Skill skill="firebase" src="/images/vectors/firebase.svg" />
-        <Skill skill="documentation" src="/images/vectors/confluence.svg" />
-        <Skill skill="java script" src="/images/vectors/java-script.svg" />
+      <div>
+        <h3 className="uppercase tracking-[20px] font-bold  text-2xl ">
+          Kindness
+        </h3>
+      </div>
+      <div>
+        <p className=" text-base  text-black mx-3 text-center max-w-[800px]">
+          At Tail Treat, we believe kindness begins at home and extends to every
+          furry friend in need. While treating your beloved pets, why not share
+          the love by feeding stray dogs in your locality? Together, we can make
+          a difference, one Tail Treat biscuit at a time, spreading joy and care
+          to all dogs, everywhere.
+        </p>
       </div>
     </motion.div>
   );

@@ -20,27 +20,25 @@ const About = (props: Props) => {
         transition={{
           duration: 1.2,
         }}
-        src="/images/vectors/guitar.svg"
-        className=" max-h-max flex-shrink-0 rounded-md  md:my-5 mx-auto object-cover"
+        src="/images/vectors/feed-dog.svg"
+        className=" h-72 flex-shrink-0 rounded-md  md:my-5 mx-auto object-cover"
       />
       <div className=" space-y-10 px-0 md:ml-10 ">
-        <h4 className=" text-2xl hidden md:block font-semibold text-white">
+        <h4 className=" text-2xl hidden md:block font-semibold text-black">
           👋 Hey there!
         </h4>
-        <p className=" text-base  text-white">
-          I’m Joyson, an iOS developer who loves building apps and websites.
-          Although iOS development is my full-time focus, I’m also passionate
-          about creating websites with React and Next.js
+        <p className=" text-base  text-black">
+          Welcome to Tail Treat, where we believe every dog deserves a healthy
+          and delicious snack! Our mission is to provide <b> affordable</b> ,
+          <b>high-quality </b> <span className="text-[#E47530]"> dog 🐶</span>{" "}
+          biscuits specially crafted to meet the nutritional needs of dogs.
           <br />
           <br />
           <span>
-            Beyond coding, I’m a dedicated drummer and guitar enthusiast 🎸, a
-            chess player ♟️, and a board game lover 🎲. A tech explorer 💻, I
-            eagerly follow the latest trends in the fast-paced tech world. I
-            like animae[Naruto 🍥] and enjoy expanding my horizons through
-            podcasts and TED Talks 🎧. I find relaxation actively participate in
-            church community, engaging in worship and church ⛪ activities that
-            deepen my faith and connection with others.
+            At Tail Treat, we aim to ensure that our furry friends enjoy treats
+            designed just for them, steering clear of human foods that may harm
+            their health. With a focus on quality and affordability, we’re
+            dedicated to making nutritious snacking accessible to all dogs.
           </span>
         </p>
       </div>

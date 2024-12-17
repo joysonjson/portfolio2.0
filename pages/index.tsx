@@ -11,12 +11,13 @@ import { useRouter } from "next/router";
 import Experience from "@/components/Experience";
 import TrippyScroll from "@/components/tripsy";
 import Memories from "@/components/Memeories";
+import Shop from "@/components/Shop";
 
 const Home = () => {
   const router = useRouter();
 
   return (
-    <main className=" bg-[rgb(36,36,36)] text-whit w-fulle  snap-y snap-mandatory  z-0">
+    <main className=" bg-white text-whit w-fulle  snap-y snap-mandatory  z-0">
       <Head>
         <title>Joyson Portfolio</title>
       </Head>
@@ -31,21 +32,24 @@ const Home = () => {
       <section id="skills" className=" snap-center overflow-x-hidden">
         <Skills />
       </section>
-      <section id="experience" className="snap-center ">
-        <Experience />
-        {/* <HorizontalScrollCarouselExperience /> */}
+      <section id="skills" className=" snap-center overflow-x-hidden">
+        <Shop />
       </section>
-      <section id="projects" className=" snap-start ">
+      {/* <section id="experience" className="snap-center ">
+        <Experience /> */}
+      {/* <HorizontalScrollCarouselExperience /> */}
+      {/* </section> */}
+      {/* <section id="projects" className=" snap-start ">
         <HorizontalScrollCarouselProjects />
-      </section>
+      </section> */}
       {/* <section id="contact" className=" snap-start overflow-x-hidden h-screen">
         <Memories />
       </section> */}
       {/* <TrippyScroll /> */}
-      <section id="contact" className=" snap-start overflow-x-hidden">
+      {/* <section id="contact" className=" snap-start overflow-x-hidden">
         <Contact />
-      </section>
-      <NavBar />
+      </section> */}
+      {/* <NavBar /> */}
     </main>
   );
 };
