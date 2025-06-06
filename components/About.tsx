@@ -42,6 +42,10 @@ const About = (props: Props) => {
             church community, engaging in worship and church ⛪ activities that
             deepen my faith and connection with others.
           </span>
+          <br />
+          <br />
+          Oh, and I’m happily married ❤️. grateful every day for the love and support I share with my partner.
+
         </p>
       </div>
     </div>
